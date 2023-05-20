@@ -1,22 +1,24 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 /* CSS Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Lato',sans-serif;
     scroll-behavior: smooth;
 }
 
 /* Global Variables */
 :root{
     --sideBGColor: #040b14;
-    --themeColor: #00A78E;
+    --themeColor: #7dfdfe;
     --iconBGColor: #2C2F3F;
-    --textColor: #353535;
-    --bgColor: #F7F7F7;
+    --textColor: #fafaff;
+    --bgColor: #040b14;
+    --sectionTitleColor: #fafaff;
+    --bgColor2: #2C2F3F;
 }
 
 
@@ -239,7 +241,7 @@ main{
 }
 /* Global Heading */
 .sub-heading{
-    color: black;
+    color: var(--sectionTitleColor);
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -365,7 +367,7 @@ main{
 /* ====== Facts Section START ======= */
 #fact{
     padding: 50px 30px;
-    background-color: white;
+    background-color: var(--bgColor2);
 }
 #fact .fact-row{
     display: grid;
@@ -417,7 +419,7 @@ main{
 /* ====== Skills SEction START ====== */
 #skill{
     padding: 70px 30px;
-    background-color: white;
+    background-color: var(--bgColor2);
 }
 #skill .skill-row{
     margin-top: 35px;
@@ -608,7 +610,7 @@ main{
 /* ====== Projects Section START ====== */
 #portfolio{
     padding: 70px 30px;
-    background-color: white;
+    background-color: var(--bgColor2);
 }
 #portfolio .port-row{
     margin-top: 50px;
